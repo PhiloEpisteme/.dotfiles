@@ -1,10 +1,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pathogen settings                                                    "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"execute pathogen#infect()
-"execute pathogen#helptags()
+execute pathogen#infect()
+execute pathogen#helptags()
 
-"filetype plugin indent on
+filetype plugin indent on
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
