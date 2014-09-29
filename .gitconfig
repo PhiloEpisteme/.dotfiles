@@ -4,5 +4,9 @@
 [core]
     excludesfile = ~/.gitfiles/.gitignore_global
 	editor = vim
+    # Convert incoming CRLF to LF
+    autocrlf = input
+    # Detect and fix trailing-space and space-before-tab
+    whitespace = trailing-space, space-before-tab
 [color]
 	ui = true
