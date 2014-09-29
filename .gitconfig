@@ -2,7 +2,7 @@
 	name = David Johnson
 	email = da.johnson.a@gmail.com
 [core]
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitfiles/.gitignore_global
 	editor = vim
 [color]
 	ui = true
