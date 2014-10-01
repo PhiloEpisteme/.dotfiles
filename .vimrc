@@ -18,6 +18,7 @@ let g:pymode_folding = 0
 let g:pymode_lint_checkers = ['pylint', 'pep8', 'mccabe']
 let g:pymode_options_colorcolumn = 0 " Turn off column at max_line_length
 let g:pymode_lint_on_write = 0  " Do not check code on every save
+let g:pymode_rope = 0 " Turn off rope script
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
