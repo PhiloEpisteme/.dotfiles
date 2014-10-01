@@ -38,6 +38,8 @@ set ruler " Always show curent position
 set number " Turn on line numbers
 set vb t_vb= " Flash screen in place of beeps
 set showmatch " Show matching brackets
+set nobackup " Don't make backup files
+set noswapfile " Don't make .swp files
 
 """ Searching
 set incsearch " Search as you type
