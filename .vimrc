@@ -35,7 +35,7 @@ set softtabstop=4 " Treats four spaces as one tab
 set autoindent
 
 """ General options
-syntax on
+syntax enable " enable syntax coloring
 set ruler " Always show curent position
 set number " Turn on line numbers
 set vb t_vb= " Flash screen in place of beeps
@@ -60,3 +60,9 @@ autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
 """ .vimrc
 " Automatically resource the .vimrc after changes
 autocmd! bufwritepost .vimrc source %
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim colors solarized                                                 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=light " Set solarized setting to light/dark
+colorscheme solarized
