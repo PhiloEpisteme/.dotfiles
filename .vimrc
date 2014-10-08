@@ -64,5 +64,5 @@ autocmd! bufwritepost .vimrc source %
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim colors solarized                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set background=light " Set solarized setting to light/dark
+set background=dark " Set solarized setting to light/dark
 colorscheme solarized
