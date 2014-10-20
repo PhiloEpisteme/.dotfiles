@@ -1,12 +1,26 @@
 [user]
 	name = David Johnson
-	email = da.johnson.a@gmail.com
-[core]
-    excludesfile = ~/.gitfiles/.gitignore_global
-	editor = vim
-    # Convert incoming CRLF to LF
-    autocrlf = input
-    # Detect and fix trailing-space and space-before-tab
-    whitespace = trailing-space, space-before-tab
+	email = johnson_@mit.edu
 [color]
 	ui = true
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[core]
+	excludesfile = ~/Documents/gitfiles/.gitignore_global
+	whitespace = trailing-space,space-before-tab
+	autocrlf = input
+    editor = vim
+[branch]
+	autosetupmerge = true
+[rerere]
+	enabled = true
+[advice]
+	statusHints = false
+# Force the use of spaces
+[filter "detab"]
+    clean = expand --tabs=4 --initial  # Expand tabs to spaces
+    smudge = cat  # Take file back (with spaces)
