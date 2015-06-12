@@ -67,3 +67,30 @@ autocmd! bufwritepost .vimrc source %
 set t_Co=256
 set background=dark " Set solarized setting to light/dark
 colorscheme solarized
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Relative Line Number Settings                                        "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set linenumber style toggle
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
+
+" Set linenumber style based on whether vim is in focus
+:au FocusLost * :set number
+:au FocusGained * :set relativenumber
+
+" Set linenumber style based on insert or normal mode
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+"""""
+" Credit for the above section belongs to Jeff Kreeftmeijer and his post at
+" http://jeffkreeftmeijer.com/2012/relative-line-numbers-in-vim-for-super-fast-movement/
+"""""
