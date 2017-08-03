@@ -4,6 +4,7 @@
 [color]
 	ui = true
 [merge]
+    ff = no
 	tool = vimdiff
 [diff]
 	tool = vimdiff
