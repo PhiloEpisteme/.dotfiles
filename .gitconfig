@@ -27,3 +27,5 @@
     smudge = cat  # Take file back (with spaces)
 [push]
     default = simple
+[pull]
+    rebase = true
