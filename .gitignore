@@ -3,3 +3,5 @@ bash/local/*
 plugins/*
 resurrect*
 sidebar*
+
+.netrwhist
