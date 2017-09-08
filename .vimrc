@@ -84,7 +84,19 @@ function! NumberToggle()
   endif
 endfunc
 
+function! NoNumber()
+    if(&relativenumber == 1)
+        set norelativenumber
+    endif
+    if(&number == 1)
+        set nonumber
+    else
+        set number
+    endif
+endfunc
+
 nnoremap <C-n> :call NumberToggle()<cr>
+nnoremap <C-c> :call NoNumber()<cr>
 
 " Set linenumber style based on whether vim is in focus
 :au FocusLost * :set number
