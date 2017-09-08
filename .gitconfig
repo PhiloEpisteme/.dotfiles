@@ -11,7 +11,7 @@
 [difftool]
 	prompt = false
 [core]
-	excludesfile = ~/.gitfiles/.gitignore_global
+	excludesfile = ~/.git_files/.gitignore_global
 	whitespace = trailing-space,space-before-tab
 	autocrlf = input
     editor = vim
