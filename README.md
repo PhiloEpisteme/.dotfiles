@@ -9,3 +9,30 @@ at startup.
 
     git clone --recursive git@github.com:PhiloEpisteme/.tmux_files.git ~/.tmux_files
     ln -s /path/to/.tmux_files/.tmux.conf ~/.tmux.conf
+
+## How To:
+
+### Install New Plugin
+
+    vim ~/.tmux_files
+	set -g @plugin 'plugin/name'
+	prefix + I
+
+### Update All Plugins
+
+    prefix + U
+
+### Remove Plugin/Submodule
+
+    1. Remove the relevant `set` line from the .tmux.config
+    2. prefix + alt + u
+
+## Plugins
+
+- [Tmux Resurrect][resurrect] - Bruno Sutic
+- [Tmux Sidebar][sidebar] - Bruno Sutic
+- [Tmux Package Manager][tpm] - Bruno Sutic
+
+[resurrect]: https://github.com/tmux-plugins/tmux-resurrect
+[sidebar]: https://github.com/tmux-plugins/tmux-sidebar
+[tpm]: https://github.com/tmux-plugins/tpm
