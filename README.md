@@ -17,6 +17,7 @@ If you are using my .bash_files repo, you don't need to do anything.
 Otherwise, do the following steps.
 
 vim ~.bashrc
-	if [ -f ~/.git_files/.git-completion.bash ]; then
-		. ~/.git_files/.git-completion.bash
-	fi
+
+    if [ -f ~/.git_files/.git-completion.bash ]; then
+        . ~/.git_files/.git-completion.bash
+    fi
