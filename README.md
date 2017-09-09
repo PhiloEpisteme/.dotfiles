@@ -13,12 +13,10 @@ symlink the .gitconfig to your home directory and set up bash_completion.
 
 ### git-completion.bash
 
-    If you are using my .bash_files repo, you don't need to do anything.
-    Otherwise, do the following steps.
+If you are using my .bash_files repo, you don't need to do anything.
+Otherwise, do the following steps.
 
-    vim ~.bashrc
-    ```
+vim ~.bashrc
 	if [ -f ~/.git_files/.git-completion.bash ]; then
 		. ~/.git_files/.git-completion.bash
 	fi
-	```
