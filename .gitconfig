@@ -1,26 +1,26 @@
 [user]
-	name = David Johnson
-	email = da.johnson.a@gmail.com
+    name = David Johnson
+    email = da.johnson.a@gmail.com
 [color]
-	ui = true
+    ui = true
 [merge]
     ff = no
-	tool = vimdiff
+    tool = vimdiff
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [core]
-	excludesfile = ~/.git_files/.gitignore_global
-	whitespace = trailing-space,space-before-tab
-	autocrlf = input
+    excludesfile = ~/.git_files/.gitignore_global
+    whitespace = trailing-space,space-before-tab
+    autocrlf = input
     editor = vim
 [branch]
-	autosetupmerge = true
+    autosetupmerge = true
 [rerere]
-	enabled = true
+    enabled = true
 [advice]
-	statusHints = false
+    statusHints = false
 # Force the use of spaces
 [filter "detab"]
     clean = expand --tabs=4 --initial  # Expand tabs to spaces
