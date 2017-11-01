@@ -43,6 +43,7 @@ Alternatively, you can use the following commands.
 - [vim-colors-solarized][solarized] - Ethan Schoonover
 - [vim-fugitive][fugitive] - Tim Pope
 - [vim-surround][vimsurround] - Tim Pope
+- [vim-go][vim-go] - Fatih Arslan
 
 ## References
 
@@ -54,3 +55,4 @@ Alternatively, you can use the following commands.
 [fugitive]: https://github.com/tpope/vim-fugitive
 [vimsurround]: https://github.com/tpope/vim-surround
 [solarized_home]: http://ethanschoonover.com/solarized
+[vim-go]: http://github.com/fatih/vim-go
