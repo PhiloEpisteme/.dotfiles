@@ -28,6 +28,7 @@ let g:pymode_rope = 0 " Turn off rope script
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """ Tabbing
+let mapleader = "," "Sets the leader to , instead of \
 set smartindent
 set tabstop=4 " Sets tabs to 4 spaces
 set shiftwidth=4 " < and > indent/unindent 4 spaces
@@ -35,6 +36,7 @@ set smarttab " Uset 'shiftwidth' setting at start of lines
 set expandtab " Inserts four spaces with the tab key
 set softtabstop=4 " Treats four spaces as one tab
 set autoindent
+set backspace=indent,eol,start " Treat backspace like in most editors
 
 """ General options
 syntax enable " enable syntax coloring
