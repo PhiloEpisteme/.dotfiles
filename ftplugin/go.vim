@@ -1,4 +1,12 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set autowrite " Autosave buffers on build
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim-Go settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " run :GoBuild or GoTestCompile based on the go file
 function! s:build_go_files()
@@ -12,6 +20,9 @@ endfunction
 
 " Run GoImports on save
 let g:go_fmt_command = "goimports"
+
+" Had issues with performance if we don't use godef
+let g:go_def_mode = 'godef'
 
 " Shortcuts to tools introduced by vim-go 
 autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>

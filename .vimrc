@@ -1,5 +1,3 @@
-set shell=/bin/bash
-set diffopt=vertical
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pathogen settings                                                    "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -7,20 +5,6 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 filetype plugin indent on
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Pymode settings                                                      "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:pymode_warnings = 0
-let g:pymode_trim_whitespace = 1
-let g:pymode_options_max_line_length = 79
-let g:pymode_syntax = 1
-let g:pymode_folding = 0
-let g:pymode_lint_checkers = ['pylint', 'pep8', 'mccabe']
-let g:pymode_options_colorcolumn = 0 " Turn off column at max_line_length
-let g:pymode_lint_on_write = 0  " Do not check code on every save
-let g:pymode_rope = 0 " Turn off rope script
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -40,6 +24,8 @@ set backspace=indent,eol,start " Treat backspace like in most editors
 
 """ General options
 syntax enable " enable syntax coloring
+set shell=/bin/bash
+set diffopt=vertical
 set ruler " Always show curent position
 set number " Turn on line numbers
 set vb t_vb= " Flash screen in place of beeps
@@ -58,9 +44,10 @@ set smartcase " character is upper-case, it's case sensitive
 " Press F4 to toggle highlighting and show current value
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
-" Delete blankspace at the end of python code
-autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
-
+""" Status Line
+set statusline=[%F]%=%l/%L(%p%%)\ %c(%b\|%B)
+set laststatus=2
+"
 """ .vimrc
 " Automatically resource the .vimrc after changes
 autocmd! bufwritepost .vimrc source %
