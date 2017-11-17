@@ -9,6 +9,8 @@ at startup.
 
     git clone --recursive git@github.com:PhiloEpisteme/.tmux_files.git ~/.tmux_files
     ln -s /path/to/.tmux_files/.tmux.conf ~/.tmux.conf
+    tmux source ~/.tmux.conf
+    prefix + I
 
 ## How To:
 
