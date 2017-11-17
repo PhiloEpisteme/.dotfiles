@@ -82,7 +82,8 @@ hi statusline ctermfg=136 ctermbg=0
 au BufLeave * hi statusline ctermfg=246 ctermbg=0
 
 set statusline=[%F] """ relative file path
-set statusline+=%M """ modified bit
+set statusline+=%1M """ modified bit
+set statusline+=%{fugitive#statusline()}
 set statusline+=%= """ left-right split
 set statusline+=%4l/ """ Current line number
 set statusline+=%4L """ Total number of lines
@@ -91,6 +92,7 @@ set statusline+=%3c( """ Col number
 set statusline+=%3b\| """ Bit of char
 set statusline+=%3B) """ Hex of char
 set laststatus=2
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Relative Line Number Settings                                        "
@@ -117,7 +119,7 @@ function! NoNumber()
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
-nnoremap <C-c> :call NoNumber()<cr>
+nnoremap <C-N> :call NoNumber()<cr>
 
 " Set linenumber style based on whether vim is in focus
 :au FocusLost * :set number
