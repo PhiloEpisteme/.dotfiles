@@ -12,13 +12,6 @@ create a symlink to the `.vimrc` to make it available to Vim on startup.
     git clone --recursive https://github.com/PhiloEpisteme/.vim ~/.vim
     ln -s ~/.vim/.vimrc ~/.vimrc
 
-Alternatively, you can use the following commands.
-
-    git clone https://github.com/PhiloEpisteme/.vim ~/.vim
-    cd ~/.vim
-    git submodule init
-    git submodule update
-
 ## How To:
 
 ### Install New Plugin
