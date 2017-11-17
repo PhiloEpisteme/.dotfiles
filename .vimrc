@@ -62,24 +62,24 @@ colorscheme solarized
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! InsertStatuslineColor(mode)
   if a:mode == 'i'
-    """ Forest Green on insert mode
-    hi statusline ctermfg=29 ctermbg=0
+    """ Solarized Green on insert mode
+    hi statusline ctermfg=37 ctermbg=0
   elseif a:mode == 'r'
-    """ Orangeish Yellow on replace mode
-    hi statusline ctermfg=220 ctermbg=0
+    """ Solarized Blue on replace mode
+    hi statusline ctermfg=33 ctermbg=0
   else
-    """ Red
-    hi statusline ctermfg=196 ctermbg=0
+    """ Solarized Red
+    hi statusline ctermfg=160 ctermbg=0
   endif
 endfunction
 
 au InsertEnter * call InsertStatuslineColor(v:insertmode)
-""" Purple on normal mode
-au InsertLeave * hi statusline ctermfg=61 ctermbg=0
-au BufEnter * hi statusline ctermfg=61 ctermbg=0
-hi statusline ctermfg=61 ctermbg=0
-""" Grey for inactive buffer
-au BufLeave * hi statusline ctermfg=245 ctermbg=0
+""" Solarized Yellow on normal mode
+au InsertLeave * hi statusline ctermfg=136 ctermbg=0
+au BufEnter * hi statusline ctermfg=136 ctermbg=0
+hi statusline ctermfg=136 ctermbg=0
+""" Solarized Base1for inactive buffer
+au BufLeave * hi statusline ctermfg=246 ctermbg=0
 
 set statusline=[%F] """ relative file path
 set statusline+=%M """ modified bit
