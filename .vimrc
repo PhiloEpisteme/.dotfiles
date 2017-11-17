@@ -1,4 +1,4 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pathogen settings                                                    "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
@@ -44,13 +44,10 @@ set smartcase " character is upper-case, it's case sensitive
 " Press F4 to toggle highlighting and show current value
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
-""" Status Line
-set statusline=[%F]%=%l/%L(%p%%)\ %c(%b\|%B)
-set laststatus=2
-"
 """ .vimrc
 " Automatically resource the .vimrc after changes
 autocmd! bufwritepost .vimrc source %
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim colors solarized                                                 "
@@ -59,6 +56,41 @@ set t_Co=256
 set background=dark " Set solarized setting to light/dark
 colorscheme solarized
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Statueline                                                           "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! InsertStatuslineColor(mode)
+  if a:mode == 'i'
+    """ Forest Green on insert mode
+    hi statusline ctermfg=29 ctermbg=0
+  elseif a:mode == 'r'
+    """ Orangeish Yellow on replace mode
+    hi statusline ctermfg=220 ctermbg=0
+  else
+    """ Red
+    hi statusline ctermfg=196 ctermbg=0
+  endif
+endfunction
+
+au InsertEnter * call InsertStatuslineColor(v:insertmode)
+""" Purple on normal mode
+au InsertLeave * hi statusline ctermfg=61 ctermbg=0
+au BufEnter * hi statusline ctermfg=61 ctermbg=0
+hi statusline ctermfg=61 ctermbg=0
+""" Grey for inactive buffer
+au BufLeave * hi statusline ctermfg=245 ctermbg=0
+
+set statusline=[%F] """ relative file path
+set statusline+=%M """ modified bit
+set statusline+=%= """ left-right split
+set statusline+=%4l/ """ Current line number
+set statusline+=%4L """ Total number of lines
+set statusline+=(%P)\ """ Percentage into file
+set statusline+=%3c( """ Col number
+set statusline+=%3b\| """ Bit of char
+set statusline+=%3B) """ Hex of char
+set laststatus=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Relative Line Number Settings                                        "
