@@ -9,11 +9,12 @@ To install this `.vimrc`, clone the repository to `~/.vim`. Pass the
 recursive flag to ensure that all submodules are cloned as well. Finally,
 create a symlink to the `.vimrc` to make it available to Vim on startup.
 
-    git clone --resursive git@github.com:PhiloEpisteme/.vimfiles.git ~/.vim
+    git clone --recursive https://github.com/PhiloEpisteme/.vim ~/.vim
     ln -s ~/.vim/.vimrc ~/.vimrc
 
 Alternatively, you can use the following commands.
 
+    git clone https://github.com/PhiloEpisteme/.vim ~/.vim
     cd ~/.vim
     git submodule init
     git submodule update
@@ -23,7 +24,7 @@ Alternatively, you can use the following commands.
 ### Install New Plugin
 
     cd ~/.vim
-    git submodule add git://github.com/Example/repo.git bundle/name
+    git submodule add https://github.com/Example/repo.git bundle/name
 
 ### Update All Plugins
 
@@ -34,7 +35,7 @@ Alternatively, you can use the following commands.
 
     1. Delete relevant section from `.gitmodules`.
     2. Delete relevant section from `.git/config`.
-    3. Run `git rm --cashed path_to_plugin`.
+    3. Run `git rm --cached path_to_plugin`.
     4. Commit and delete untracked submodule files.
 
 ## Plugins
