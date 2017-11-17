@@ -58,8 +58,9 @@ colorscheme solarized
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Statueline                                                           "
+" Statusline                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Must set the statusline color after the call to colorscheme above
 function! InsertStatuslineColor(mode)
   if a:mode == 'i'
     """ Solarized Green on insert mode
