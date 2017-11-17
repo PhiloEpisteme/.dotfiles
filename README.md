@@ -1,10 +1,7 @@
 # .git_files
-A collection of files for customizing my GIT behavior
+A collection of files for customizing git's behavior
 
 ## Installation
-
-To install this configuration clone the repo to ~/.git_files. Then, 
-symlink the .gitconfig to your home directory and set up bash_completion.
 
     git clone https://github.com/PhiloEpisteme/.git_files.git ~/.git_files
     ln -s ~/.git_files/.gitconfig ~/.gitconfig
