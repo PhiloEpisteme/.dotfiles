@@ -1,11 +1,9 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Pathogen settings                                                    "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-execute pathogen#infect()
-execute pathogen#helptags()
-
+if v:version >= 800
+    source ~/.vim/.vim8.vimrc
+elseif v:version < 800 && v:version >= 700
+    source ~/.vim/.vim7.vimrc
+endif
 filetype plugin indent on
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General settings                                                     "

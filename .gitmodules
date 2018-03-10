@@ -1,15 +1,15 @@
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+[submodule "pack/my-packages/start/vim-surround"]
+	path = pack/my-packages/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/my-packages/start/vim-fugitive"]
+	path = pack/my-packages/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
-	url = git://github.com/klen/python-mode.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
+	url = https://github.com/klen/python-mode.git
+[submodule "pack/my-packages/start/vim-go"]
+	path = pack/my-packages/start/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "pack/my-packages/start/vim-colors-solarized"]
+	path = pack/my-packages/start/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
