@@ -1,6 +1,7 @@
 [color]
     ui = true
 [merge]
+    # Force the creation of merge commits when `git merge` is used
     ff = no
     tool = vimdiff
 [diff]
@@ -13,6 +14,7 @@
     autocrlf = input
     editor = vim
 [branch]
+    # If b is only on the remote `git checkout b` creates b and tracks origin/b
     autosetupmerge = true
 [rerere]
     enabled = true
