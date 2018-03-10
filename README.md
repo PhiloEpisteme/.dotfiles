@@ -26,6 +26,7 @@ in the `bundle/` directory. Packages which only work with vim8 should go in
 - [python-mode][pymode] - Kirill Klenov
 
 #### vim7/8
+- [vim-gitgutter][gitgutter] - Andy Stewart
 - [jedi-vim][jedi] - David Halter
 - [vim-colors-solarized][solarized] - Ethan Schoonover
 - [vim-fugitive][fugitive] - Tim Pope
@@ -56,6 +57,7 @@ in the `bundle/` directory. Packages which only work with vim8 should go in
 - [Solarized Homepage][solarized_home], for more information about installing.
 
 [fugitive]: https://github.com/tpope/vim-fugitive
+[gitgutter]: https://github.com/airblade/vim-gitgutter
 [jedi]: http://github.com/davidhalter/jedi-vim
 [pathogen]: https://github.com/tpope/vim-pathogen
 [pymode]: https://github.com/klen/python-mode
