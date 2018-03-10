@@ -47,10 +47,11 @@ in the `bundle/` directory. Packages which only work with vim8 should go in
 
 ### Remove Plugin/Submodule
 
-    1. Delete relevant section from `.gitmodules`.
-    2. Delete relevant section from `.git/config`.
-    3. Run `git rm --cached path/to/plugin`.
-    4. Commit and delete untracked submodule files.
+1. Delete relevant section from `.gitmodules`
+1. Delete relevant section from `.git/config`
+1. Run `git rm --cached path/to/plugin`
+1. Commit changes
+1. Remove relevant files in `.git/modules`
 
 ## References
 
