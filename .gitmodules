@@ -10,9 +10,6 @@
 [submodule "pack/my-packages/start/vim-colors-solarized"]
 	path = pack/my-packages/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "pack/my-packages/start/jedi-vim"]
-	path = pack/my-packages/start/jedi-vim
-	url = http://github.com/davidhalter/jedi-vim.git
 [submodule "pack/my-packages/start/vim-gitgutter"]
 	path = pack/my-packages/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
