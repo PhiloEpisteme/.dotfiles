@@ -16,3 +16,6 @@
 [submodule "pack/my-packages/start/ctrlp.vim"]
 	path = pack/my-packages/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "pack/my-packages/start/jedi-vim"]
+	path = pack/my-packages/start/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
