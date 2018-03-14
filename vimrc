@@ -8,9 +8,9 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General settings                                                     "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader = "," "Sets the leader to , instead of \
 
 """ Tabbing
-let mapleader = "," "Sets the leader to , instead of \
 set smartindent
 set tabstop=4 " Sets tabs to 4 spaces
 set shiftwidth=4 " < and > indent/unindent 4 spaces
@@ -46,6 +46,12 @@ set smartcase " character is upper-case, it's case sensitive
 " Automatically resource the .vimrc after changes
 autocmd! bufwritepost .vimrc source %
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Quickfix Settings                                                 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-,> :cnext<CR>
+nnoremap <C-.> :cprevious<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim colors solarized                                                 "
