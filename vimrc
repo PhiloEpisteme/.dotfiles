@@ -33,7 +33,7 @@ set noswapfile " Don't make .swp files
 
 """ Searching
 set incsearch " Search as you type
-set hlsearch "Highlight search term in text
+set hlsearch " Highlight search term in text
 set ignorecase " All lowercase strings are case insensitive, but if one
 set smartcase " character is upper-case, it's case sensitive
 
@@ -54,6 +54,12 @@ set t_Co=256
 set background=dark " Set solarized setting to light/dark
 colorscheme solarized
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ctrlp                                                           "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra' " Start searching VC root dir 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Statusline                                                           "
