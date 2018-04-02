@@ -7,11 +7,17 @@ are detailed below.
 
 ## Installation
 To install this `.vimrc`, clone the repository to `~/.vim`. Pass the
-recursive flag to ensure that all submodules are cloned as well. Finally,
-create a symlink to the `.vimrc` to make it available to Vim on startup.
+recursive flag to ensure that all submodules are cloned as well.
 
     git clone --recursive https://github.com/PhiloEpisteme/.vim ~/.vim
-    ln -s ~/.vim/.vimrc ~/.vimrc
+
+If you prefer to clone the repo elsewhere be sure to create a symlink to the
+new location to `~/.vim`.
+
+    ln -s /path/to/.vim ~/.vim
+
+Non linux/mac users should check the documentation for where vim looks for the
+`vimrc` file by default.
 
 ## Plugins
 
