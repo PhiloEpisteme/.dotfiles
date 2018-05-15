@@ -36,6 +36,7 @@ alias gamendne="git commit --amend --no-edit"
 ########################################
 # Git Rebase Aliases
 ########################################
+alias grc="git rebase --continue"
 alias grebasei="git rebase -i"
 # Interfactive rebase against upstream branch
 function grebaseiu() {
