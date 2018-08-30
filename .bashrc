@@ -15,7 +15,16 @@ alias glogu="git log --oneline @{u}..HEAD"
 function glogrn() {
     local b=$(git branch | grep '\*' | awk '{print $2}')
     git log --oneline origin/${b}..HEAD
-    
+}
+
+# Show a oneline log against the upstream branch including modified files per
+# commit
+alias glognou="git log --oneline --name-only @{u}..HEAD"
+# Show a oneline log against a remote branch of the same name including
+# modified files per commit
+function glognorn() {
+    local b=$(git branch | grep '\*' | awk '{print $2}')
+    git log --oneline --name-only origin/${b}..HEAD
 }
 
 # Show both HEAD^ @{u} and ^@{u} HEAD logs
