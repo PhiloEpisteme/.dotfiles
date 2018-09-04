@@ -8,5 +8,9 @@ and scripts where relevant for the application of the same name.
 
 ## Installation
 
+If you wish to use all of the dotfiles contained herein you may use the
+install.sh script. This script assumes you have bash installed at `/bin/bash`.
+You are given the option to backup any currently installed .dotfiles.
+
 See the README files for each application whose dotfiles you wish to use for
-installation instructions.
+installation instructions if you wish to use a subset of those supported.
