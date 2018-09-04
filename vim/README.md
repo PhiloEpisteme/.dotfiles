@@ -14,7 +14,7 @@ recursive flag to ensure that all submodules are cloned as well.
 If you prefer to clone the repo elsewhere be sure to create a symlink to the
 new location to `~/.vim`.
 
-    ln -s /path/to/.vim ~/.vim
+    ln -s /path/to/.dotfiles/vim ~/.vim
 
 Non linux/mac users should check the documentation for where vim looks for the
 `vimrc` file by default.
