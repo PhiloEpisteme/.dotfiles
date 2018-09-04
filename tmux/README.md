@@ -7,8 +7,8 @@ be sure to pass the recursive flag so that submodules are cloned as well.
 Finally, create a symlink to the .tmux.conf file to make it available to tmux
 at startup.
 
-    git clone --recursive git@github.com:PhiloEpisteme/.tmux_files.git ~/.tmux_files
-    ln -s /path/to/.tmux_files/.tmux.conf ~/.tmux.conf
+    git clone --recursive https://github.com/PhiloEpisteme/.dotfiles.git ~/.dotfiles
+    ln -s /path/to/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
     tmux source ~/.tmux.conf
     prefix + I
 
