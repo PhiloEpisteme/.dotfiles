@@ -89,16 +89,16 @@ fi
 # Git Config
 ################################################################################
 # Enable bash completion for git commands
-if [ -f ~/.bash_files/ext/.git-completion.bash ]; then
-    . ~/.bash_files/ext/.git-completion.bash
+if [ -f ~/.dotfiles/bash/ext/.git-completion.bash ]; then
+    . ~/.dotfiles/bash/ext/.git-completion.bash
 fi
 
 
 ################################################################################
 # Prompt
 ################################################################################
-if [ -f ~/.bash_files/.bash_prompt ]; then
-    source ~/.bash_files/.bash_prompt
+if [ -f ~/.dotfiles/bash/.bash_prompt ]; then
+    source ~/.dotfiles/bash/.bash_prompt
 fi
 
 
@@ -107,7 +107,7 @@ fi
 # package settings
 ################################################################################
 
-local_rc_files=($(ls -a ~/.bash_files/local/*rc 2>/dev/null))
+local_rc_files=($(ls -a ~/.dotfiles/bash/local/*rc 2>/dev/null))
 if [ ! -z "$local_rc_files" ]; then
     for local_rc in "${local_rc_files[@]}"
     do
