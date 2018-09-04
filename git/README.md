@@ -1,10 +1,10 @@
-# .git_files
+# git dotfiles
 A collection of files for customizing git's behavior
 
 ## Installation
 
-    git clone https://github.com/PhiloEpisteme/.git_files.git ~/.git_files
-    ln -s ~/.git_files/.gitconfig ~/.gitconfig
+    git clone https://github.com/PhiloEpisteme/.dotfiles.git ~/.dotfiles
+    ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
     git config --global user.email "you@example.com"
     git config --global user.name "Your Name"
 
@@ -13,8 +13,8 @@ A collection of files for customizing git's behavior
 
 You may want to add the following to your `~/.bashrc` or similar.
 
-    if [ -f ~/.git_files/.git-completion.bash ]; then
-        . ~/.git_files/.git-completion.bash
+    if [ -f ~/.dotfiles/git/.git-completion.bash ]; then
+        . ~/.dotfiles/git/.git-completion.bash
     fi
 
 ## Summary
