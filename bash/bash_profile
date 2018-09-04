@@ -8,8 +8,8 @@ fi
 # Path Functions
 ###############################################################################
 canDedupePath=false
-if [ -f ~/.dotfiles/bash/.bash_path ]; then
-    source ~/.dotfiles/bash/.bash_path
+if [ -f ~/.dotfiles/bash/path ]; then
+    source ~/.dotfiles/bash/path
     canDedupePath=true
 fi
 

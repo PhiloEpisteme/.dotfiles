@@ -12,8 +12,8 @@ following files.
     # Backup your old settings. 
     $ cp ~/.bash_profile ~/.bash_profile_old 
     $ cp ~/.bashrc ~/.bashrc_old
-    $ ln -s /path/to/.dotfiles/bash/.bash_profile ~/.bash_profile
-    $ ln -s /path/to/.dotfiles/bash/.bashrc ~/.bashrc
+    $ ln -s /path/to/.dotfiles/bash/bash_profile ~/.bash_profile
+    $ ln -s /path/to/.dotfiles/bash/bashrc ~/.bashrc
     $ source ~/.bash_profile
     # Close all terminal windows or type `source ~/.bash_profile` in each.
 

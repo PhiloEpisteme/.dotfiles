@@ -97,8 +97,8 @@ fi
 ################################################################################
 # Prompt
 ################################################################################
-if [ -f ~/.dotfiles/bash/.bash_prompt ]; then
-    source ~/.dotfiles/bash/.bash_prompt
+if [ -f ~/.dotfiles/bash/prompt ]; then
+    source ~/.dotfiles/bash/prompt
 fi
 
 
