@@ -30,6 +30,7 @@ set vb t_vb= " Flash screen in place of beeps
 set showmatch " Show matching brackets
 set nobackup " Don't make backup files
 set noswapfile " Don't make .swp files
+set updatetime=1000 " (ms) trigger swap write, CursorHold,  autocommand
 
 """ Searching
 set incsearch " Search as you type
