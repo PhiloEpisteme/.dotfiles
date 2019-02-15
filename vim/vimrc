@@ -10,6 +10,10 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = "," "Sets the leader to , instead of \
 
+""" Tab Window Controls
+cnoreabbrev tn tabn
+cnoreabbrev tp tabp
+
 """ Tabbing
 set smartindent
 set tabstop=4 " Sets tabs to 4 spaces
