@@ -61,6 +61,7 @@ nnoremap <C-.> :cprevious<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim colors solarized                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:solarized_termcolors=256
 set t_Co=256
 set background=dark " Set solarized setting to light/dark
 colorscheme solarized
