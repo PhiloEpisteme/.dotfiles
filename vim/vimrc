@@ -64,7 +64,7 @@ nnoremap <C-.> :cprevious<CR>
 let g:solarized_termcolors=256
 set t_Co=256
 set background=dark " Set solarized setting to light/dark
-colorscheme solarized
+:silent! colorscheme solarized " Silently fail
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ctrlp                                                           "
