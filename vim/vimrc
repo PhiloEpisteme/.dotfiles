@@ -100,7 +100,9 @@ au BufLeave * hi statusline ctermfg=246 ctermbg=0
 
 set statusline=[%F] """ relative file path
 set statusline+=%1M """ modified bit
-set statusline+=%{fugitive#statusline()}
+if exists("*fugitive#statusline")
+    set statusline+=%{fugitive#statusline()}
+endif
 set statusline+=%= """ left-right split
 set statusline+=%4l/ """ Current line number
 set statusline+=%4L """ Total number of lines
