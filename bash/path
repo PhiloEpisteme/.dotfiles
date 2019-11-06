@@ -8,7 +8,7 @@
 function addToPath {
     # ${!3} dereferences $3 to use the value the variable refers to. For example $3=PATH would give $PATH
     if [ -z ${3+x} ]; then TMP_PATH="$PATH"; TMP_NAME="PATH"; else TMP_PATH="${!3}"; TMP_NAME="$3"; fi
-    if [ ! -d $1 ]; then echo "WARNING: Added $1 to $TMP_NAME but $1 doens't seem to exist"; fi
+    if [ ! -d $1 ]; then echo "WARNING: Added $1 to $TMP_NAME but $1 doesn't seem to exist"; fi
 
     case ":$TMP_PATH:" in # Add trailing :'s to cover first and last entries
         *":$1:"*)
