@@ -2,6 +2,7 @@
 # your path. Turn this off with the following.
 if [ -n "$TMUX" ]; then
     PATH=""
+    echo "Sourcing /etc/profile"
     source /etc/profile
 fi
 ###############################################################################
@@ -9,6 +10,7 @@ fi
 ###############################################################################
 canDedupePath=false
 if [ -f ~/.dotfiles/bash/path ]; then
+    echo "Sourcing ~/.dotfiles/bash/path"
     source ~/.dotfiles/bash/path
     canDedupePath=true
 fi
