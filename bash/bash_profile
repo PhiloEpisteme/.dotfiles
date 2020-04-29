@@ -18,7 +18,11 @@ fi
 ###############################################################################
 # PATH
 ###############################################################################
+if [ ! -d ~/.local/bin ]; then \
+    mkdir -p ~/.local/bin
+fi
 PATH=/usr/local/bin:$PATH
+PATH=$HOME/.local/bin:$PATH
 PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/bin
