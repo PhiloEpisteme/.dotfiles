@@ -102,6 +102,14 @@ if [ -f ~/.dotfiles/bash/prompt ]; then
     source ~/.dotfiles/bash/prompt
 fi
 
+################################################################################
+# Tmux settings
+################################################################################
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+    if [ -f ~/.dotfiles/bash/tmuxrc ]; then
+        . ~/.dotfiles/bash/tmuxrc
+    fi
+fi
 
 ################################################################################
 # Load Local rc Files: Keep this at the end so that local settings override
