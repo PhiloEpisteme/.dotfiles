@@ -28,3 +28,7 @@ let g:go_def_mode = 'godef'
 autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
