@@ -47,13 +47,17 @@ set smartcase " character is upper-case, it's case sensitive
 " Press F4 to toggle highlighting and show current value
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
-""" .vimrc
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto Commands                                                    "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Automatically resource the .vimrc after changes
 autocmd! bufwritepost .vimrc source %
+" Trim whitespace automatically
+autocmd BufWritePre * %s/\s\+$//e
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Quickfix Settings                                                 "
+" Quickfix Settings                                                    "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <C-,> :cnext<CR>
 nnoremap <C-.> :cprevious<CR>
